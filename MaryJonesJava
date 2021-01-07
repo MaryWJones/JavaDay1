@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("What would you like for me to call you?");
+        String nickName = input.nextLine();
+        System.out.printf("Hey There %s! \n, nickName);
+        // Correct is  System.out.printf("Hey There %s! \n", nickName);
+        System.out.println("How old are you?");
+        int age = input.nextInt();
+        if (age < 18) {
+            System.out.println("Please have an adult help you");
+        } else {
+            System.out.printf("Since you are %s Welcome to the Thunderdome!);
+            // Correct System.out.printf("Since you are %s Welcome to the Thunderdome!\n", age);
+        }
+    }
+}
